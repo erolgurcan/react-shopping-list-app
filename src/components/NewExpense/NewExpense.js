@@ -8,8 +8,7 @@ const NewExpense = (props) =>{
       ...enteredExpenseData,
       id: Math.random().toString
     };
-    console.log(expenseData);
-    //transfer data to App.js
+      //transfer data to App.js
     props.onAddExpense(expenseData);
   };
 
