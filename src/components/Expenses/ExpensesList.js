@@ -2,11 +2,11 @@ import ExpenseItem from "./ExpenseItem";
 import "./ExpensesList.css";
 
 const ExpensesList = (props) => {
-console.log("Expenses List " + props.items);
+console.log(props.items.length);
 
-if (props.items.lenght === 0) {
+if (props.items.length === 0) {
     return (
-        <h2>No Expense found in this year</h2>
+        <h2 className="expenses-list__fallback ">No Expense found in this year</h2>
     )
 }
 
